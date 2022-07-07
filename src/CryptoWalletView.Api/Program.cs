@@ -1,4 +1,11 @@
+using CryptoWalletView.Api.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<CryptoContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("CryptoContext") 
+        ?? throw new InvalidOperationException("Connection string 'CryptoContext' not found.")));
 
 // Add services to the container.
 

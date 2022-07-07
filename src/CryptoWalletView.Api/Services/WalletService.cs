@@ -1,0 +1,1 @@
+namespace CryptoWalletView.Api.Services;

@@ -1,0 +1,56 @@
+@import '../../../../styles/variables';
+
+.walletItem {
+    display: grid;
+    grid-template-areas: 
+        "img name total"
+        "img amount change";
+    grid-template-columns: 70px 1fr 1fr;
+    align-items: center;
+    
+    &__img {
+        flex-shrink: 2;
+        grid-area: img;
+        margin: 10px;
+    }
+
+    &__title {
+        grid-area: name;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+    &__name {
+        font-weight: 300;
+        font-size: 0.7em;
+        color: $grey;
+    }
+
+    &__amount {
+        grid-area: amount;
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+    &__price {
+        color: $grey;
+        font-size: 0.7em;
+    }
+
+    &__total {
+        grid-area: total;
+        justify-self: end;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    &__change {
+        grid-area: change;
+        justify-self: end;
+
+        &--profit {
+            color: $green;
+        }
+        &--loss {
+            color: $red;
+        }
+    }
+}
