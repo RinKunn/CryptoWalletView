@@ -1,9 +1,4 @@
 .walletList {
-    &__title {
-        padding: 0.5em 1em;
-        box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.7);
-        position: sticky;
-    }
 
     &__list {
         list-style: none;
@@ -13,4 +8,6 @@
         margin-top: 2em;
         padding: 1em;
     }
+
+    
 }

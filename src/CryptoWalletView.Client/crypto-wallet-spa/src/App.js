@@ -1,7 +1,7 @@
 import './App.scss';
 import Board from './components/board/Board';
 import WalletCard from './components/card/wallet-card/WalletCard';
-import WalletList from './components/wallet/wallet-list/WalletList';
+import Wallet from './components/wallet/Wallet';
 
 function App() {
   const assets = [
@@ -34,9 +34,11 @@ function App() {
       }
     }
   ]
+
+  
   return (
     <div className="App">
-      <WalletList assets={assets} />
+      <Wallet />
     </div>
   );
 }

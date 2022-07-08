@@ -2,7 +2,7 @@ namespace CryptoWalletView.Api.Models;
 
 public class WalletAssetInfo
 {
-    public Symbol Symbol { get; set; }
+    public CoinInfo CoinInfo { get; set; }
     public decimal Amount { get; set; }
     public decimal Price { get; set; }
     public decimal ChangeValue { get; set; }

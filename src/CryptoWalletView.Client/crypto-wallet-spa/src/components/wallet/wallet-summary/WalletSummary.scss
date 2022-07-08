@@ -20,16 +20,29 @@
             &:nth-child(1) {
                 font-weight: 700;
                 background-color: rgba(0, 0, 0, 0.6);
-                padding: 0.2em;
+                padding: 0.2em 0.7em;
                 border-radius: 5px;
             }
         }
     }
+    &__changeInfo {
+        font-size: 0.8em;
+        color: $grey;
+        background-color: #444;
+        padding: 0.2em 0.7em;
+        border-radius: 5px;
+    }
+
     &--profit {
         color: $green;
     }
     
     &--loss {
         color: $red;
+    }
+
+    &__desc {
+        text-align: center;
+        margin-top: 1em;
     }
 }
